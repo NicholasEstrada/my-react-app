@@ -20,17 +20,19 @@ export const AuthProvider = ({children}) => {
 
     }, [])
 
-    const login = (email, password) => {
+    const login = (email, password, check) => {
 
-        console.log("login auth", {email, password})
+        console.log("login auth", {email, password, check})
 
         const loggedUser = {
             id: "123",
             email,
         }
 
+        if(check === '1'){
         localStorage.setItem("user", JSON.stringify(loggedUser))
-        
+        }
+
         //login rapido
         if(password === "teste"){
             setUser(loggedUser)
