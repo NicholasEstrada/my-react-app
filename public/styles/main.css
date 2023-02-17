@@ -29,13 +29,8 @@ footer, .bar {
 
 }
 
-footer{
-    position: absolute;
-    bottom:0;
-}
-
 .texto-principal{
-    background-color: rgb(138, 148, 168);
+    background-image: linear-gradient(180deg, #225c7e, rgb(250, 250, 250));
     font-size: xx-large;
     text-align: center;
     padding: 5rem;
@@ -48,8 +43,38 @@ footer{
     text-shadow: 0.1em 0.1em 0.2em black;
 }
 
-.info-contatos{
-    flex: 1 1 auto;
-    margin: 4rem;
+.calendario{
+    display: flex;
+    justify-content: center;
+
 }
 
+#img{
+    filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
+}
+
+.main{
+    background-color: rgb(250, 250, 250);
+}
+
+#texto {
+    text-decoration:dashed;
+    color: #000000;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.divborder{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-image: linear-gradient(180deg, #c5c4c1, rgb(250, 250, 250));
+}
+
+.texto-rodape{
+    background-image: linear-gradient(360deg, #225c7e, rgb(250, 250, 250));
+    font-size: xx-large;
+    text-align: center;
+    padding: 5rem;
+    color: #ffffff;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-family: 'Courier New', Courier, monospace;
+}

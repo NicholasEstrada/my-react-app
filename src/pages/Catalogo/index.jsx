@@ -2,6 +2,9 @@ import React, { useState, useContext } from "react";
 
 import { AuthContext } from "../contexts/auth";
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet';
+
+const TITLE = 'Catálogo';
 
 const Catalogo = () => {    //const { authenticated, login } = useContext
     //    (AuthContext)
@@ -19,6 +22,10 @@ const Catalogo = () => {    //const { authenticated, login } = useContext
 
     return (
         <div className="main">
+
+            <Helmet>
+                <title>{ TITLE }</title>
+            </Helmet>
 
         <nav className="bar navbar navbar-expand-lg navbar-light ">
             <div className="container-fluid">
@@ -40,12 +47,50 @@ const Catalogo = () => {    //const { authenticated, login } = useContext
                 
 
             <div className="conteudo">
-                <div className="container">
-                    <h1>conteúdo</h1>
-                </div>
+                    <div className="texto-principal">
+                        <p>Descrição de alguns serviços ofertados</p>
+                    </div>
+
+
+                    <div className="container mt-5">
+                        <div className="row">
+                            <div className="servico col-sm-4 ">
+                                <h5>Consultoria</h5>
+                                <p>Informática, serviços de software, computadores e máquinas</p>
+                            </div>
+                            <div className="servico col-sm-4">
+                                <h5>Formatar</h5>
+                                <p>Computadores, notebooks e celulares</p>
+                            </div>
+                            <div className="servico col-sm-4">
+                                <h5>Aprimoramento</h5>
+                                <p>Consulta de upgrade de hardware e omputadores, notebooks e celulares</p>
+                            </div>
+                            <div className="servico col-sm-4">
+                                <h5>Instalar equipamentos de rede e bluetooth</h5>
+                                <p>Realizar instalação de impressoras, repetidores de Wi-Fi, câmeras, lâmpadas Wi-Fi...</p>
+                            </div>
+                            <div className="servico col-sm-4">
+                                <h5>Procurações</h5>
+                                <p>Configuração Java para fazer procurações</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row justify-content-center p-5">
+                        <div className="container">
+                            
+                        </div>
+                    </div>
             </div>
 
-            <footer>
+            <div className="texto-rodape align-self-end">
+                <div className="container">
+                    <h4 id="texto"><Link to="/catalogo">Ver disponibilidade de horários</Link>
+                    <img vspace="5" hspace="5" width="13" height="13" src="/imagens/sair-do-canto-superior-direito.png" alt="Sair para o Link" /></h4>
+                </div>
+            </div>
+            <footer className="align-self-end">
                 <p>Copyright 2023 © - Nicholas Estrada</p>
             </footer>
 

@@ -1,10 +1,17 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet';
+
+const TITLE = 'Nicholas Serviços';
 
 const ProductPage = () => {
     return (
         <div className="main">
+
+            <Helmet>
+                <title>{ TITLE }</title>
+            </Helmet>
 
         <nav className="bar navbar navbar-expand-lg navbar-light ">
             <div className="container-fluid">
@@ -26,12 +33,26 @@ const ProductPage = () => {
                 
 
             <div className="conteudo">
-                <div className="container">
-                    <h1>conteúdo</h1>
-                </div>
+                    <div className="texto-principal">
+                        <p>Descrição de alguns serviços ofertados</p>
+                    </div>
+
+
+                    <div className="container">
+                        
+                    </div>
+
+                    <div className="row justify-content-center p-5">
+                        
+                        <div className="container">
+                            <h4 id="texto">Ver disponibilidade de horários</h4>
+                        </div>
+                        
+                    </div>
             </div>
 
-            <footer>
+
+            <footer className="align-self-end">
                 <p>Copyright 2023 © - Nicholas Estrada</p>
             </footer>
 
