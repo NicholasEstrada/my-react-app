@@ -36,7 +36,7 @@ export const AuthProvider = ({children}) => {
         //login rapido
         if(password === "teste"){
             setUser(loggedUser)
-            navigate("/")
+            navigate("/Home")
         }
     }
 

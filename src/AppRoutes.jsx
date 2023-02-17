@@ -10,6 +10,9 @@ import{
 import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
 import ProductPage from "./pages/ProductPage";
+import Catalogo from './pages/Catalogo';
+import Blog from './pages/Blog';
+import Contato from './pages/Contato';
 
 import { AuthProvider, AuthContext } from "./pages/contexts/auth";
 
@@ -23,7 +26,7 @@ const AppRoutes = () => {
         }
 
         if(!authenticated){
-            return <Navigate to="/product" />
+            return <Navigate to="/" />
         }
 
         return children
@@ -34,8 +37,11 @@ const AppRoutes = () => {
             <AuthProvider>
                 <Routes>
                     <Route exact path="/login" element={<LoginPage/>} />
-                    <Route exact path="/" element={<Private><HomePage/></Private>} />
-                    <Route exact path="/product" element={<ProductPage/>} />
+                    <Route exact path="/" element={<ProductPage/>} />
+                    <Route exact path="/Home" element={<Private><HomePage/></Private>} />
+                    <Route exact path="/Catalogo" element={<Catalogo/>} />
+                    <Route exact path="/Blog" element={<Blog/>} />
+                    <Route exact path="/Contato" element={<Contato/>} />
                 </Routes>
             </AuthProvider>
         </Router>

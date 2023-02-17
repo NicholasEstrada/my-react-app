@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 
+import { AuthContext } from "../contexts/auth";
 import { Link } from "react-router-dom";
 
-const ProductPage = () => {
+const Blog = () => {    //const { authenticated, login } = useContext
+    //    (AuthContext)
+
+    //const [email, setEmail] = useState("");
+    //const [password, setPassword] = useState("");
+    //const [check, setCheck] = useState("");
+
+    //const handleSubmit = (e) => {
+    //    e.preventDefault();
+    //    console.log("submit", { email, password, check });
+
+    //    login(email, password, check)
+    //}
+
     return (
         <div className="main">
 
@@ -36,7 +50,7 @@ const ProductPage = () => {
             </footer>
 
         </div>
-    )
-}
+    );
+};
 
-export default ProductPage;
+export default Blog;
