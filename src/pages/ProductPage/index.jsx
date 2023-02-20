@@ -34,24 +34,23 @@ const ProductPage = () => {
 
             <div className="conteudo">
                     <div className="texto-principal">
-                        <p>Descrição de alguns serviços ofertados</p>
+                        <p>Conhecimentos gerais</p>
                     </div>
 
 
                     <div className="container">
                         
-                    </div>
+                        
 
-                    <div className="row justify-content-center p-5">
-                        
-                        <div className="container">
-                            <h4 id="texto">Ver disponibilidade de horários</h4>
-                        </div>
-                        
                     </div>
+                </div>
+
+                <div className="texto-rodape align-self-end">
+                <div className="container">
+                    <h4 id="texto"><Link to="/contato">Ver disponibilidade de horários</Link>
+                    <img vspace="5" hspace="5" width="13" height="13" src="/imagens/sair-do-canto-superior-direito.png" alt="Sair para o Link" /></h4>
+                </div>
             </div>
-
-
             <footer className="align-self-end">
                 <p>Copyright 2023 © - Nicholas Estrada</p>
             </footer>

@@ -48,24 +48,51 @@ const Blog = () => {    //const { authenticated, login } = useContext
 
             <div className="conteudo">
                     <div className="texto-principal">
-                        <p>Como você prefere falar com a gente?</p>
+                        <p>Conhecimentos gerais</p>
                     </div>
 
 
                     <div className="container">
-                        
+                        <a href="https://getbootstrap.com/docs/5.3/helpers/stretched-link/">criar</a>
                     </div>
 
                     <div className="row justify-content-center p-5">
+                    <div class="card">
+  
 
-                        <div className="container">
-                            <h4 id="texto">Ver disponibilidade de horários</h4>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<div class="card" aria-hidden="true">
+  <div class="card-body">
+    <h5 class="card-title placeholder-glow">
+      <span class="placeholder col-6"></span>
+    </h5>
+    <p class="card-text placeholder-glow">
+      <span class="placeholder col-7"></span>
+      <span class="placeholder col-4"></span>
+      <span class="placeholder col-4"></span>
+      <span class="placeholder col-6"></span>
+      <span class="placeholder col-8"></span>
+    </p>
+    <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+  </div>
+</div>
+
+                            
                         </div>
-                        
-                    </div>
+                </div>
+
+                <div className="texto-rodape align-self-end">
+                <div className="container">
+                    <h4 id="texto"><Link to="/contato">Ver disponibilidade de horários</Link>
+                    <img vspace="5" hspace="5" width="13" height="13" src="/imagens/sair-do-canto-superior-direito.png" alt="Sair para o Link" /></h4>
+                </div>
             </div>
-
-
             <footer className="align-self-end">
                 <p>Copyright 2023 © - Nicholas Estrada</p>
             </footer>

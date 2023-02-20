@@ -52,27 +52,32 @@ const Catalogo = () => {    //const { authenticated, login } = useContext
                     </div>
 
 
-                    <div className="container mt-5">
+                    <div className="container mt-4">
                         <div className="row">
-                            <div className="servico col-sm-4 ">
-                                <h5>Consultoria</h5>
+                            <div className="servico col-sm-5 col-md-6 border border-white">
+                                <h5 className="border-bottom">Consultoria</h5>
                                 <p>Informática, serviços de software, computadores e máquinas</p>
+                                <img className="float-end mb-2" src="/imagens/servicos-de-consultoria.png" alt="" width="40" height="40" />
                             </div>
-                            <div className="servico col-sm-4">
-                                <h5>Formatar</h5>
+                            <div className="servico col-sm-5 col-md-6 border border-white">
+                                <h5 className="border-bottom">Formatar</h5>
                                 <p>Computadores, notebooks e celulares</p>
+                                <img className="float-end mb-2" src="/imagens/smartphone.png" alt="" width="40" height="40" />
                             </div>
-                            <div className="servico col-sm-4">
-                                <h5>Aprimoramento</h5>
-                                <p>Consulta de upgrade de hardware e omputadores, notebooks e celulares</p>
+                            <div className="servico col-sm-5 col-md-6 border border-white">
+                                <h5 className="border-bottom">Aprimoramento</h5>
+                                <p>Consulta de upgrade de hardware e computadores, notebooks e celulares</p>
+                                <img className="float-end mb-2" src="/imagens/update.png" alt="" width="40" height="40" />
                             </div>
-                            <div className="servico col-sm-4">
-                                <h5>Instalar equipamentos de rede e bluetooth</h5>
+                            <div className="servico col-sm-5 col-md-6 border border-white">
+                                <h5 className="border-bottom">Instalar equipamentos de rede e bluetooth</h5>
                                 <p>Realizar instalação de impressoras, repetidores de Wi-Fi, câmeras, lâmpadas Wi-Fi...</p>
+                                <img className="float-end mb-2" src="/imagens/rede.png" alt="" width="40" height="40" />
                             </div>
-                            <div className="servico col-sm-4">
-                                <h5>Procurações</h5>
+                            <div className="servico col-sm-5 col-md-6 border border-white">
+                                <h5 className="border-bottom">Procurações</h5>
                                 <p>Configuração Java para fazer procurações</p>
+                                <img className="float-end mb-2" src="/imagens/java.png" alt="" width="40" height="40" />
                             </div>
                         </div>
                     </div>
@@ -86,7 +91,7 @@ const Catalogo = () => {    //const { authenticated, login } = useContext
 
             <div className="texto-rodape align-self-end">
                 <div className="container">
-                    <h4 id="texto"><Link to="/catalogo">Ver disponibilidade de horários</Link>
+                    <h4 id="texto"><Link to="/contato">Ver disponibilidade de horários</Link>
                     <img vspace="5" hspace="5" width="13" height="13" src="/imagens/sair-do-canto-superior-direito.png" alt="Sair para o Link" /></h4>
                 </div>
             </div>
