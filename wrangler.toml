@@ -1,10 +1,10 @@
 account_id = "a7801a7bf9a0265dff24ea0358da5721"
 name = "my-react-app"
+main = "src/index.js"
 type = "webpack"
-route = ''
-zone_id = ''
-usage_model = ''
+usage_model = 'unbound'
 compatibility_flags = []
 workers_dev = true
-site = {bucket = "./build",entry-point = "workers-site"}
-compatibility_date = "2022-05-24"
+[site]
+bucket = "./build"
+compatibility_date = "2023-02-21"
