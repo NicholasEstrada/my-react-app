@@ -43,7 +43,7 @@ const ProductPage = () => {
 
             <div className="conteudo">
                     <div className="texto-principal">
-                        <p>Conhecimentos gerais</p>
+                        <p>Eu na Web 🚀</p>
                     </div>
 
 

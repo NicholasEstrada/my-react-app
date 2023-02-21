@@ -1,6 +1,5 @@
 account_id = "a7801a7bf9a0265dff24ea0358da5721"
 name = "my-react-app"
-main = "src/index.js"
 type = "webpack"
 usage_model = 'bundled'
 workers_dev = true
