@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
@@ -6,6 +6,15 @@ import { Helmet } from 'react-helmet';
 const TITLE = 'Nicholas Serviços';
 
 const ProductPage = () => {
+
+    const Clipboard = () =>{
+        let textoCopiado = document.getElementById("link");
+        textoCopiado.select();
+        textoCopiado.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        alert("O texto é: " + textoCopiado.value);
+    }
+
     return (
         <div className="main">
 
@@ -38,9 +47,25 @@ const ProductPage = () => {
                     </div>
 
 
-                    <div className="container">
+                    <div className="container text-center">
                         
-                        
+                    <div class="links row d-grid gap-2 col-6 mx-auto mb-5 ">
+                        <a href="http://instagram.com/nicholastrada" target="_blank" rel="noopener noreferrer">
+                            <button class="btn btn-secondary col-md-auto " type="button">
+                                <img className="float-start" src="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png" width="30" alt="" />
+                            Instagram</button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nicholas-estrada-909242174/" target="_blank" rel="noopener noreferrer">
+                            <button class="btn btn-secondary col-md-auto " type="button">
+                                <img className="float-start" src="https://static.licdn.com/sc/h/5bukxbhy9xsil5mb7c2wulfbx" width="30" alt="" />
+                            Linkedin</button>
+                        </a>
+                        <a href="http://github.com/nicholasestrada" target="_blank" rel="noopener noreferrer">
+                            <button class="btn btn-secondary col-md-auto " type="button">
+                                <img className="float-start" src="https://github.com/fluidicon.png" width="30" alt="" />
+                            Github</button>
+                        </a>
+                    </div>
 
                     </div>
                 </div>

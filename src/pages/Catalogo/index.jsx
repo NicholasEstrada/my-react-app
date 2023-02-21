@@ -55,27 +55,27 @@ const Catalogo = () => {    //const { authenticated, login } = useContext
                     <div className="container mt-4">
                         <div className="row">
                             <div className="servico col-sm-5 col-md-6 border border-white">
-                                <h5 className="border-bottom">Consultoria</h5>
+                                <h5 className="titulo-servico border-bottom">Consultoria</h5>
                                 <p>Informática, serviços de software, computadores e máquinas</p>
                                 <img className="float-end mb-2" src="/imagens/servicos-de-consultoria.png" alt="" width="40" height="40" />
                             </div>
                             <div className="servico col-sm-5 col-md-6 border border-white">
-                                <h5 className="border-bottom">Formatar</h5>
+                                <h5 className="titulo-servico border-bottom">Formatar</h5>
                                 <p>Computadores, notebooks e celulares</p>
                                 <img className="float-end mb-2" src="/imagens/smartphone.png" alt="" width="40" height="40" />
                             </div>
                             <div className="servico col-sm-5 col-md-6 border border-white">
-                                <h5 className="border-bottom">Aprimoramento</h5>
+                                <h5 className="titulo-servico border-bottom">Aprimoramento</h5>
                                 <p>Consulta de upgrade de hardware e computadores, notebooks e celulares</p>
                                 <img className="float-end mb-2" src="/imagens/update.png" alt="" width="40" height="40" />
                             </div>
                             <div className="servico col-sm-5 col-md-6 border border-white">
-                                <h5 className="border-bottom">Instalar equipamentos de rede e bluetooth</h5>
+                                <h5 className="titulo-servico border-bottom">Instalar equipamentos de rede e bluetooth</h5>
                                 <p>Realizar instalação de impressoras, repetidores de Wi-Fi, câmeras, lâmpadas Wi-Fi...</p>
                                 <img className="float-end mb-2" src="/imagens/rede.png" alt="" width="40" height="40" />
                             </div>
                             <div className="servico col-sm-5 col-md-6 border border-white">
-                                <h5 className="border-bottom">Procurações</h5>
+                                <h5 className="titulo-servico border-bottom">Procurações</h5>
                                 <p>Configuração Java para fazer procurações</p>
                                 <img className="float-end mb-2" src="/imagens/java.png" alt="" width="40" height="40" />
                             </div>
